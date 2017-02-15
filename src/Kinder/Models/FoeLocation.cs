@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Kinder.Models
+{
+    [Table("FoeLocations")]
+    public class FoeLocation
+    {
+        [Key]
+        public int FoeLocationId { get; set; }
+        public string LocationName { get; set; }
+        public string FoeName { get; set; }
+        public int FoeAttack { get; set; }
+        public int FoeHP { get; set; }
+        public int PlunderId { get; set; }
+        public virtual Plunder Plunder { get; set; }
+    }
+}
