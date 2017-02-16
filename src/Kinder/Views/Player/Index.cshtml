@@ -1,4 +1,27 @@
 ﻿@{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Player Home";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+@using System.Security.Claims
+
+@model IEnumerable<Kinder.Models.Player>
+
+<h2>Adventures in Kinderworld</h2>
+<h3>It's Stinky!</h3>
+
+@if(Model.Any())
+{
+    <h4>Your Characters:</h4>
+    @foreach (var listPlayer in Model)
+    {
+        <h4>@Html.ActionLink(listPlayer.PlayerName, "Details", new { id = listPlayer.PlayerId })</h4>
+    }
+
+}
+else
+{
+    <h4>No Players Have been added!</h4>
+}
+    @Html.ActionLink("Create a Kindergartener", "Create", "Player")
+

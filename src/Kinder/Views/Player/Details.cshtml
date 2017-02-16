@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Player Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Kinder.Models.Player
+
+
+<h1>@Html.DisplayFor(m=>m.PlayerName)</h1>
+<hr />
+<h3>Hit Points: @Html.DisplayFor(m => m.PlayerHP)</h3>
+<h3>Attack: @Html.DisplayFor(m => m.PlayerAttack)</h3>
+<h3>Defense: @Html.DisplayFor(m => m.PlayerDefense)</h3>
+<h3>Juice Boxes: @Html.DisplayFor(m => m.Potion)</h3>
+<h3>Blankies: @Html.DisplayFor(m => m.Shield)</h3>
+<h3>Colander Hat: @Html.DisplayFor(m => m.Armour)</h3>
+<h3>Squirt Guns: @Html.DisplayFor(m => m.Weapon)</h3>
+
+@Html.ActionLink("Edit", "Edit", new { id = Model.PlayerId })
+@Html.ActionLink("Delete", "Delete", new { id = Model.PlayerId })

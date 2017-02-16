@@ -13,5 +13,12 @@ namespace Kinder.Models
         {
 
         }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
+        public DbSet<Player> Players { get; set; }
+        public DbSet<Plunder> Plunders { get; set;}
+        public DbSet<FoeLocation> FoeLocations { get; set; }
     }
 }

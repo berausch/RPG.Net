@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Player Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Kinder.Models.Player
+
+<h2>Add a new Kindergartener</h2>
+<hr />
+@using (Html.BeginForm())
+{
+    @Html.Label("What's your name?")
+    @Html.EditorFor(model => model.PlayerName)
+
+    <input type="submit" value="Create" />
+}
+
