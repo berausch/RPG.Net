@@ -1,4 +1,4 @@
-﻿# _{Kindergarten RPG}_
+﻿# _{Adventures in Kinderworld RPG}_
 
 #### _{.Net Exercise for Epicodus}, {02.10.2017}_
 
@@ -6,11 +6,11 @@
 
 ## Description
 
-_{This is a .Net exercise made for Epicodus.}_
+_{This is a .Net exercise made for Epicodus. It is not fully functional yet.}_
 
 ## Setup/Installation Requirements
 
-* _Go to https://github.com/berausch/League-Organizer-.Net.git
+* _Go to https://github.com/berausch/RPG.Net.git
 * _Clone the repository
 * _Open the project in Visual Studio
 * _Open your terminal and navigate to Visual Studio, and then Projects\Gummi\src\Gummi 
